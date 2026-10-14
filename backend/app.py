@@ -8,8 +8,9 @@ def home():
     return send_from_directory('../frontend/pages', 'index.html')
 
 @app.route('/<page>')
-def pages(page):
-    return send_from_directory('../frontend/pages', page + '.html')
+def pages(pag
+          e):
+    return send_from_directory('../frontend/pages', pages + '.html')
 
 @app.route('/static/<path:filename>')
 def static_files(filename):
