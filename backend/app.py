@@ -9,7 +9,7 @@ def home():
 
 @app.route('/<page>')
 def pages(page):
-    return send_from_directory('../frontend/pages', pages + '.html')
+    return send_from_directory('../frontend/pages', page + '.html')
 
 @app.route('/static/<path:filename>')
 def static_files(filename):

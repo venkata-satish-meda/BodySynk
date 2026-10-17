@@ -1,6 +1,5 @@
+const script = document.createElement("script");
 
-const btn = document.getElementById('btn');
+script.src = "/static/js/home.js";
 
-btn.addEventListener('click', function() {
-    alert('Hello!');
-});
+document.body.appendChild(script);
